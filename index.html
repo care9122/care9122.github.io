@@ -1,176 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Weex Referral Code "discount" – $599 Bonus + 20% Off</title>
-
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weex Referral Code "discount" - Earn Bonuses & Save</title>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f6faff;
-        color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7fa;
+      color: #333;
+      padding: 20px;
     }
-
-    header {
-        background: #0057ff;
-        color: #fff;
-        padding: 20px 40px;
-        text-align: center;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    header p {
-        margin: 5px 0 0;
-        font-size: 18px;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 30px 20px;
-        background: #e9f1ff;
-    }
-
-    .hero img {
-        width: 90%;
-        max-width: 900px;
-        border-radius: 10px;
-    }
-
     .container {
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     }
-
+    h1 {
+      font-weight: 700;
+      color: #0047ab; /* Weex-like blue */
+      margin-bottom: 20px;
+      text-align: center;
+    }
     h2 {
-        color: #0057ff;
-        font-size: 26px;
-        margin-bottom: 10px;
+      color: #0047ab;
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
-
     p {
-        line-height: 1.6;
-        font-size: 16px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #555;
     }
-
     ul {
-        padding-left: 20px;
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: #555;
     }
-
-    .btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 20px;
-        background: #0057ff;
-        color: #fff;
-        font-size: 18px;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: 0.3s;
+    .referral-code-section {
+      background-color: #e7f0ff; /* light blue background */
+      border: 2px solid #0047ab;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      flex-wrap: wrap;
     }
-
-    .btn:hover {
-        background: #003fcc;
+    .referral-code {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0047ab;
+      user-select: all;
+      background-color: #d0e3ff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      flex-grow: 1;
+      margin-right: 15px;
+      text-align: center;
+      word-break: break-word;
     }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #1d1d1d;
-        color: #bbb;
-        margin-top: 40px;
+    button.copy-btn {
+      background-color: #0047ab;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      flex-shrink: 0;
+      margin-top: 10px;
     }
-</style>
-
+    button.copy-btn:hover {
+      background-color: #003380;
+    }
+    a {
+      color: #0047ab;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .referral-code-section {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .referral-code {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+      }
+      button.copy-btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Weex Referral Code "discount" – Grab $599 Bonus and Save 20% on Every Trade!</h1>
 
-<header>
-    <h1>Weex Referral Code "discount"</h1>
-    <p>Grab $599 Bonus + Save 20% on Every Trade</p>
-</header>
+    <p>Use my Weex referral code: <strong>"discount"</strong> to get instant rewards. Join Weex today and receive a $599 bonus plus enjoy 20% off trading fees on every trade.</p>
 
-<section class="hero">
-    <img src="https://via.placeholder.com/1200x400.png?text=Weex+Referral+Code+Discount" alt="Weex Banner">
-</section>
+    <div class="referral-code-section" aria-label="Referral code block with copy button">
+      <div class="referral-code" id="referralCode" tabindex="0">discount</div>
+      <button class="copy-btn" onclick="copyReferralCode()" aria-label="Copy referral code to clipboard">Copy Code</button>
+    </div>
 
-<div class="container">
-    <h2>What Is the Weex Referral Code?</h2>
-    <p>
-        The Weex referral code <strong>"discount"</strong> gives new users exclusive benefits such as 
-        <b>20% trading fee discount</b> and a <b>$599 welcome bonus</b>.  
-        Enter this code during signup to unlock all the rewards.
-    </p>
-
-    <a class="btn" href="https://www.weex.com/" target="_blank">Join Weex Now</a>
-</div>
-
-<div class="container">
-    <h2>Benefits You Will Get</h2>
-    <ul>
-        <li>20% discount on every trade</li>
-        <li>$599 signup bonus</li>
-        <li>Instant trading coupons</li>
-        <li>Beginner-friendly interface</li>
-        <li>Fast KYC and easy deposits</li>
-        <li>Multiple bonuses for completing tasks</li>
-    </ul>
-</div>
-
-<div class="container">
-    <h2>How to Apply the Referral Code</h2>
-    <p>Follow these simple steps to activate the benefits:</p>
-
-    <ol>
-        <li>Visit the official Weex website.</li>
-        <li>Click on <b>Sign Up</b>.</li>
-        <li>Choose Email or Phone registration.</li>
-        <li>Find the field labeled <b>Referral Code</b>.</li>
-        <li>Enter: <strong>discount</strong></li>
-        <li>Complete KYC and start trading.</li>
-    </ol>
-
-    <a class="btn" href="https://www.weex.com/" target="_blank">Apply Referral Code</a>
-</div>
-
-<div class="container">
     <h2>Why Choose Weex?</h2>
     <ul>
-        <li>Low trading fees</li>
-        <li>Strong security system</li>
-        <li>Copy trading features</li>
-        <li>Fast crypto deposits & withdrawals</li>
-        <li>24/7 customer support</li>
+      <li>Low Trading Fees: Save more with Weex’s competitive fees, enhanced by referral bonuses.</li>
+      <li>Wide Asset Selection: Trade hundreds of cryptocurrencies on the platform.</li>
+      <li>User-Friendly Interface: A seamless experience for beginners and pros alike.</li>
+      <li>Ongoing Benefits: Earn continual rewards when you and your referrals trade.</li>
     </ul>
-</div>
 
-<div class="container">
-    <h2>About Us</h2>
-    <p>
-        We provide simple and easy-to-understand crypto guides, referral codes,
-        and bonus offers. Our goal is to help users save money and gain more rewards
-        when trading on trusted platforms.
-    </p>
-</div>
+    <h2>How to Get Started with Weex Referral Code?</h2>
+    <ol>
+      <li>Click the official registration link and fill in your email and password.</li>
+      <li>Ensure the referral code <strong>discount</strong> is auto-filled or enter it manually.</li>
+      <li>Verify your email using the code sent to your inbox.</li>
+      <li>Complete KYC verification if required, then explore spot trading, futures, and staking options.</li>
+      <li>Invite friends using your unique referral code to continue earning bonuses.</li>
+    </ol>
 
-<footer>
-    © 2025 Weex Referral Guide | All Rights Reserved  
-    <br>This website is for educational purposes only.
-</footer>
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Q:</strong> What is Weex?<br />
+    <strong>A:</strong> Weex is a leading cryptocurrency exchange platform offering spot trading, futures, staking, and more, with secure, low-fee trading.</p>
 
-<script>
-// You can add future JavaScript here if needed.
-console.log("Weex Referral Website Loaded Successfully");
-</script>
+    <p><strong>Q:</strong> Can I sign up without a referral code?<br />
+    <strong>A:</strong> Yes, but you'll miss out on the exclusive bonuses and trading fee discounts you get when using a referral code.</p>
 
+    <p><strong>Q:</strong> What if I forget to use a referral code?<br />
+    <strong>A:</strong> Some promotions allow applying a referral code later in your account settings, so check your dashboard’s referral section.</p>
+
+    <h2>Need Support?</h2>
+    <p>If you encounter any issues during sign-up or trading, Weex offers help via their official help center or live chat feature.</p>
+
+    <p><em>Start saving and earning today with your Weex referral code <strong>"discount"</strong>!</em></p>
+  </div>
+
+  <script>
+    function copyReferralCode() {
+      const codeElement = document.getElementById('referralCode');
+      const text = codeElement.textContent || codeElement.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Referral code copied to clipboard: ' + text);
+      }, () => {
+        alert('Failed to copy referral code. Please copy manually.');
+      });
+    }
+  </script>
 </body>
 </html>
